@@ -5,8 +5,8 @@ const PORT = process.env.PORT || 3231 ;
 
 const SocketManager = require('./SockerManager');
 
-io.connection('connection', SocketManager);
+io.on('connection', SocketManager);
 
-app.listen(Port, () => {
+app.listen(PORT, () => {
   console.log('connected to port:' + PORT);
 });

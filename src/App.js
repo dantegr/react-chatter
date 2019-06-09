@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Layout from './components/Layout';
+import './styles/index.css';
 
 
-const App = () => {
-  return (
-    <div className="container">
-      App
-    </div>
-  );
+export class App extends Component {
+
+    render(){
+    return (
+    
+        <Layout title="Chatter App" />
+
+    );
+  }
 }
 
 export default App;
